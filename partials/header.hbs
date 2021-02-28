@@ -11,10 +11,22 @@
             {{/if}}
         </div>
         <div class="navbar-right">
-            <div class="toggle-track">
-                <div class="toggle-moon"><i class="icon icon-brightness-2"></i></div>
-                <div class="toggle-sun"><i class="icon icon-white-balance-sunny"></i></div>
-                <div class="toggle-thumb"></div>
+            <div class="header-social">
+                <a class="header-social-item header-social-item-github" href="https://github.com/michaeldboyd"
+                    target="_blank" rel="noopener" aria-label="Github">
+                    <i class="icon icon-github-circle"></i>
+                </a>
+                {{#if @site.twitter}}
+                    <a class="header-social-item header-social-item-twitter" href="{{twitter_url @site.twitter}}"
+                        target="_blank" rel="noopener" aria-label="Twitter">
+                        <i class="icon icon-twitter"></i>
+                    </a>
+                {{/if}}
+                <a class="header-social-item header-social-item-rss"
+                    href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" target="_blank" rel="noopener"
+                    aria-label="RSS">
+                    <i class="icon icon-rss"></i>
+                </a>
             </div>
         </div>
     </div>
